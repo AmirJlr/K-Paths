@@ -590,6 +590,6 @@ if __name__ == "__main__":
     # --dataset_path data/paths/drugbank_test_add_reverse.json \
     # --dataset_name drugbank \
     # --output_dir outputs/drugbank \
-    # --model_name_or_path google/txgemma-9b-chat \
+    # --model_name_or_path google/txgemma-9b-chat \  # google/txgemma-2b-predict #
     # --use_kg \
     # --debug

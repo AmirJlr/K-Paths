@@ -570,6 +570,6 @@ if __name__ == "__main__":
     # --dataset_path data/paths/drugbank_test_add_reverse.json \
     # --dataset_name drugbank \
     # --output_dir outputs/drugbank \
-    # --model_name_or_path meta-llama/Meta-Llama-3.1-8B-Instruct \
+    # --model_name_or_path meta-llama/Meta-Llama-3.1-8B-Instruct \ ### TechxGenus/Meta-Llama-3-8B-Instruct-AWQ ### LLM-Research/Meta-Llama-3.1-8B-Instruct-AWQ-INT4 ### TheBloke/LLaMA-Pro-8B-Instruct-AWQ
     # --use_kg \
     # --debug
