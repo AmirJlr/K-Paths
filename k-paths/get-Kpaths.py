@@ -160,7 +160,7 @@ def main(args):
 
     # Wrap function with selected mode
     wrapped_fn = partial(wrapped_get_formatted_paths, mode=args.mode)
-    dataset = dataset.map(wrapped_fn, num_proc=12)
+    dataset = dataset.map(wrapped_fn)
 
     # Save processed dataset
     output_file = os.path.join(args.output_dir, create_output_file_name(args))

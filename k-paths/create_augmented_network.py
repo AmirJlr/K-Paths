@@ -15,28 +15,27 @@ PATHS = {
         "reversed_data_relations": "data/hetionet/hetionet_reversed_relations.json"
     },
        
-    "drugbank": {
-        "node2id": "data/drugbank/node2id.json",
-        "bkg_file":"data/drugbank/BKG_file.txt",
-        "train_file":"data/drugbank/Drugbank_train.txt",
-        "data_relations": "data/drugbank/drugbank_relations.json"
+    # "drugbank": {
+    #     "node2id": "data/drugbank/node2id.json",
+    #     "bkg_file":"data/drugbank/BKG_file.txt",
+    #     "train_file":"data/drugbank/Drugbank_train.txt",
+    #     "data_relations": "data/drugbank/drugbank_relations.json"
         
-    },
-    "ddinter": {
-        "node2id": "data/ddinter/node2id.json",
-        "bkg_file":"data/ddinter/BKG_file.txt",
-        "train_file":"data/ddinter/DDinter_train.txt",
-        "data_relations": "data/ddinter/ddinter_relations.json"
-    },
+    # },
+    # "ddinter": {
+    #     "node2id": "data/ddinter/node2id.json",
+    #     "bkg_file":"data/ddinter/BKG_file.txt",
+    #     "train_file":"data/ddinter/DDinter_train.txt",
+    #     "data_relations": "data/ddinter/ddinter_relations.json"
+    # },
+
     "pharmaDB": { 
         "node2id": "data/pharmaDB/node2id.json",
         "bkg_file":"data/pharmaDB/BKG_file.txt",
         "train_file":"data/pharmaDB/pharmaDB_train.txt",
         "data_relations": "data/pharmaDB/pharmaDB_relations.json"
-        }
-        
-
-        }
+    }
+}
 
 # ---------- Main ----------
 def main():
@@ -63,7 +62,6 @@ def main():
         print(f"Augmented KG for {dataset}: {len(augmented_kg)} edges")
         print(f"Relation types: {len(augmented_kg.relation.value_counts())}")
 
-        # Save KG
         # Save KG
         augmented_kg.to_csv(f"data/{dataset}/{dataset}_Augmented_KG.txt", sep=" ", index=False, header=False)
 

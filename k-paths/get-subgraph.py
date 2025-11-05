@@ -5,14 +5,15 @@ from utils.subgraph_utils import load_dataframe, extract_triplets_from_paths, mo
 
 # ---------- Define Global Constants ----------
 PATHS = {
-    "drugbank": { 
-        "train": "data/paths/drugbank_train_add_reverse.json",
-        "test": "data/paths/drugbank_test_add_reverse.json",
-    },
-    "ddinter": {
-        "train": "data/paths/ddinter_train_add_reverse.json",
-        "test": "data/paths/ddinter_test_add_reverse.json",
-    },
+    # "drugbank": { 
+    #     "train": "data/paths/drugbank_train_add_reverse.json",
+    #     "test": "data/paths/drugbank_test_add_reverse.json",
+    # },
+    
+    # "ddinter": {
+    #     "train": "data/paths/ddinter_train_add_reverse.json",
+    #     "test": "data/paths/ddinter_test_add_reverse.json",
+    # },
     
     "pharmaDB": {
         "train": "data/paths/pharmaDB_train_add_reverse.json",
